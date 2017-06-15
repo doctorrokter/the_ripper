@@ -46,7 +46,6 @@ QVariantMap TabsService::update(const int& id, const QString& name, const QStrin
 }
 
 void TabsService::remove(const int& id) {
-    DBConfig::execute("");
     DBConfig::execute(QString("DELETE FROM tabs WHERE id = %1").arg(QString::number(id)));
     emit removed(id);
 }
