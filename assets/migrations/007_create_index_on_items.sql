@@ -1,0 +1,1 @@
+CREATE INDEX IF NOT EXISTS channel_id_status_idx ON items (channel_id, status);

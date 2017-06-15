@@ -1,0 +1,1 @@
+CREATE INDEX IF NOT EXISTS tab_id_idx ON channels (tab_id);
